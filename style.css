@@ -1,0 +1,358 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    background-color: rgb(211, 133, 146);
+}
+.toggle-menu-icon{
+    display: none;
+}
+
+.logo img {
+    margin-top: 15px;
+    height: 53px;
+    width: 95px;
+    border-radius: 50px;
+    line-height: 2.2;
+}
+
+.logo p {
+    position: relative;
+    margin-left: 120px;
+    top: -30px;
+
+}
+
+.baby-navlist {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.baby-navlist a {
+    margin: 0 10px;
+    color: #111;
+    font-size: 18px;
+    transition: all 0.42s ease;
+
+}
+
+.baby-navlist a:hover {
+    color: red;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+
+}
+
+.icon i {
+    color: #333030;
+    font-size: 19px;
+    margin-right: 18px;
+    transition: al .42s ease;
+}
+
+.icon i:hover {
+    color: rgb(189, 12, 12);
+    transform: scale(1.1);
+}
+
+.section {
+    padding: 28px 90px;
+
+}
+
+.baby-babber-con {
+    margin-top: 100px;
+    height: 100vh;
+}
+
+.main-text {
+    width: 100%;
+    height: 100%;
+    background-image: url('Photos/11.jpg');
+    opacity: 1;
+    /* background-image: url('Photos/3.jpg'); */
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    padding: 100px;
+
+}
+
+.main-text .banner-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    margin: -20px 0px;
+   padding: 40px 0px 40px 10px;
+   
+}
+
+.main-text h5 {
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 27px;
+    text-transform: capitalize;
+    font-weight: 500;
+
+
+}
+
+.main-text h1 {
+    color: #4f6b0e;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    
+    /* margin-bottom: 10px; */
+
+}
+
+.main-text p {
+    padding: 16px 0px;
+    color: #d10a0a;
+    font-size: 19px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+}
+
+.main-text button {
+
+    padding: 10px 10px;
+    color: #333c56;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    border-radius: 8px;
+}
+.main-text button:hover{
+    background-color: #333030;
+    color: aliceblue;
+}
+
+
+.product-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+   
+}
+
+.product-col{
+    width: 270px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 3px;
+    border: 1px solid #b6a7a7;
+    margin: 10px 0;
+}
+.product-col:hover{
+    transition: all .43s ease;
+    transform: scale(1.0.1);
+}
+
+.product-img{
+    height: 270px;
+    width: 300px;
+    position: relative;
+
+}
+.product-img img{
+    height: 100%;
+    width: 89%;
+
+}
+.product-content-text{
+    text-align: center;
+    color: red;
+    margin: 30px 0;
+    font-size: 20px;
+}
+.product-content-outer{
+    margin: 20px 0  0 10px;
+    padding: 20px 0   10px 10px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: hwb(0 96% 3%); */
+}
+.rating-outer{
+    display: flex;
+    flex-direction: column;
+}
+.product-rating{
+    margin-bottom: 10px;
+    color: hsl(64, 71%, 49%);
+
+}
+.heart-icon i{
+    margin-right: 9px;
+    margin-bottom: 6px;
+    color: #522b2b;
+}
+.heart-icon i:hover{
+    color: #d10a0a;
+}
+.price h4{
+    margin-bottom: 5px;
+
+    color: #504848;
+}
+.price p{
+    color: #0c0b0b;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: bold;
+    /* line-height: 100; */
+    margin-bottom: 5px;
+    
+}
+.price p:hover{
+    color: red;
+    transition: all .43s ease;
+}
+.price .cart{
+    font-size: 14px;
+    position: relative;
+    left: 8rem;
+    bottom: 2rem;
+    margin-bottom: 20px;
+    border: 1px solid rgb(206, 189, 189);
+    padding: 9px 5px;
+    text-align: center;
+    border-radius: 9px;
+}
+.price .cart:hover{
+    background-color: #615c5c;
+    color: #f1e3e3;
+}
+
+
+.product-text h3{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: rgb(6, 90, 6);
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+
+.footer-baby{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(218, 121, 137);
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-left: 20px ;
+    /* padding-right: 20px; */
+}
+ .heding{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: #6d6b70;
+    color: rgb(57, 9, 187);
+   
+}
+.heding:hover{
+    color: #d62929;
+}
+.one p{
+    margin: 20px;
+
+}
+.two p{
+    margin: 20px;
+}
+.three p{
+    margin: 20px;
+}
+.four p{
+    margin: 20px;
+}
+ .four .font-foot-icon i{
+    color: #fffafb;
+    margin-top: 7px;
+    margin-left: 40px;
+    font-size: 22px;
+    border: 1px solid rgb(71, 67, 67);
+    border-radius: 50px;
+    padding: 7px;
+}
+.four .font-foot-icon i:hover{
+    color: #d10a0a;
+    transition:  all .43s ease;
+    background-color: #b7b4c2;
+}
+
+.footer-baby p:hover{
+  color: rgb(192, 36, 36);
+  transition: all 45s ease; 
+}
+
+@media (max-width:768px) 
+{
+    .product-row
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        gap: 0;
+        flex-direction: column;
+    }
+
+        .baby-navlist
+        {
+            display: none;
+        }
+        .icon
+        {
+            display: none;
+        }
+       .toggle-menu-icon i{
+        display: block
+
+       }
+       
+        
+    }
+   
+
+    
+    
+    
